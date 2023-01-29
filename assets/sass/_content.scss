@@ -19,13 +19,14 @@
 @media only screen and(min-width :900px) {
     .contenido-1 {
         grid-area: cont1;
+        font-size: 20px;
+        padding-top: 40px;
     }
 }
 
 .contenido-2 {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     @extend .contenido-1
 }
 
@@ -71,7 +72,8 @@
 
 @media only screen and(min-width :900px) {
     .video__inicio {
-        margin-left: 35px;
+        width: 40vw;
+        margin-left: 15px;
     }
 }
 
@@ -86,7 +88,6 @@
 
 @media only screen and(min-width :900px) {
     #contenedor {
-        background-color: yellow;
         width: 100%;
         height: 100%;
         display: grid;
@@ -137,7 +138,7 @@
 
 //Paso-A-Paso
 
-.contenedor-pasoApaso {
+.contenedor-pasoApaso-1 {
     width: c.$ancho;
     margin: c.$margen;
     border-radius: c.$redondeado;
@@ -170,6 +171,10 @@
 
 .carousel-2 {
     @include carousel-editable(#5F8888)
+}
+
+.contenedor-pasoApaso-2{
+    @extend .contenedor-pasoApaso-1
 }
 
 .carousel-3 {
